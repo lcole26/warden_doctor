@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1697006327240" clover="3.2.0">
+  <project timestamp="1697006327240" name="All files">
+    <metrics statements="64" coveredstatements="33" conditionals="16" coveredconditionals="10" methods="13" coveredmethods="5" elements="93" coveredelements="48" complexity="0" loc="64" ncloc="64" packages="1" files="2" classes="2"/>
+    <file name="osc_util.ts" path="C:\Users\elocv\Documents\a lot of everything\coding stuff\node_stuff\espruino_osc_server\src\osc_util.ts">
+      <metrics statements="31" coveredstatements="11" conditionals="4" coveredconditionals="0" methods="7" coveredmethods="2"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="20" count="0" type="stmt"/>
+      <line num="22" count="0" type="stmt"/>
+      <line num="23" count="0" type="cond" truecount="0" falsecount="1"/>
+      <line num="24" count="0" type="stmt"/>
+      <line num="25" count="0" type="stmt"/>
+      <line num="29" count="0" type="cond" truecount="0" falsecount="1"/>
+      <line num="30" count="0" type="stmt"/>
+      <line num="33" count="0" type="stmt"/>
+      <line num="34" count="0" type="stmt"/>
+      <line num="37" count="1" type="stmt"/>
+      <line num="41" count="0" type="stmt"/>
+      <line num="42" count="0" type="stmt"/>
+      <line num="44" count="0" type="stmt"/>
+      <line num="45" count="0" type="cond" truecount="0" falsecount="1"/>
+      <line num="46" count="0" type="stmt"/>
+      <line num="47" count="0" type="stmt"/>
+      <line num="51" count="0" type="cond" truecount="0" falsecount="1"/>
+      <line num="52" count="0" type="stmt"/>
+      <line num="55" count="0" type="stmt"/>
+      <line num="56" count="0" type="stmt"/>
+      <line num="59" count="1" type="stmt"/>
+    </file>
+    <file name="util.ts" path="C:\Users\elocv\Documents\a lot of everything\coding stuff\node_stuff\espruino_osc_server\src\util.ts">
+      <metrics statements="33" coveredstatements="22" conditionals="12" coveredconditionals="10" methods="6" coveredmethods="3"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="18" count="1" type="cond" truecount="4" falsecount="0"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="23" count="1" type="cond" truecount="4" falsecount="0"/>
+      <line num="36" count="1" type="stmt"/>
+      <line num="40" count="1" type="stmt"/>
+      <line num="42" count="1" type="stmt"/>
+      <line num="43" count="1" type="stmt"/>
+      <line num="45" count="1" type="stmt"/>
+      <line num="46" count="1" type="stmt"/>
+      <line num="50" count="1" type="stmt"/>
+      <line num="53" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="54" count="1" type="stmt"/>
+      <line num="58" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="59" count="1" type="stmt"/>
+      <line num="63" count="1" type="stmt"/>
+      <line num="66" count="1" type="stmt"/>
+      <line num="74" count="1" type="stmt"/>
+      <line num="75" count="0" type="stmt"/>
+      <line num="77" count="0" type="stmt"/>
+      <line num="78" count="0" type="stmt"/>
+      <line num="80" count="0" type="stmt"/>
+      <line num="81" count="0" type="stmt"/>
+      <line num="86" count="0" type="cond" truecount="0" falsecount="1"/>
+      <line num="87" count="0" type="stmt"/>
+      <line num="91" count="0" type="cond" truecount="0" falsecount="1"/>
+      <line num="92" count="0" type="stmt"/>
+      <line num="96" count="0" type="stmt"/>
+      <line num="99" count="0" type="stmt"/>
+      <line num="102" count="1" type="stmt"/>
+      <line num="104" count="1" type="stmt"/>
+      <line num="108" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

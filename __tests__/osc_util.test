@@ -1,0 +1,53 @@
+import {Client, Message} from 'node-osc';
+import {
+  newCablesClient,
+  constructOSCMessage,
+  sendOSCMessage,
+  constructAndSendOSCMessage,
+} from '../src/osc_util';
+import {ParsedSerialMessage} from '../src/util';
+import {newUDPServer} from '../src/multicast_example';
+import * as dgram from 'node:dgram';
+
+const test_multicast_address = '239.1.2.3';
+const multicast_port = 5554;
+const cables_port = 9000;
+let test_cables_client: Client;
+let test_server: dgram.Socket;
+let test_osc_message: Message;
+const test_parsed_serial_message: ParsedSerialMessage = [
+  '/espruino/test',
+  [400],
+];
+
+beforeEach(() => {
+  test_server = newUDPServer();
+  test_cables_client = newCablesClient(test_multicast_address);
+  test_osc_message = constructOSCMessage(test_parsed_serial_message);
+});
+
+describe('ParsedSerialMessage->OSC message construction + testing', () => {
+  test('test cables client generation', () => {
+    expect(test_cables_client).toBeDefined();
+    expect(test_cables_client).toBeInstanceOf(Client);
+  });
+
+  test('test osc message construction from a ParsedSerialMessage', () => {
+    expect(test_osc_message).toBeDefined();
+    expect(test_osc_message).toBeInstanceOf(Message);
+  });
+
+  test('test sending osc messages, mainly to cables', () => {
+    const send_result = sendOSCMessage(test_osc_message, test_cables_client);
+    expect(send_result).toBe(true);
+  });
+
+  test('construction and sending of osc messages from a single function. if the other tests pass, this should pass by default.', () => {
+    const send_result = constructAndSendOSCMessage(
+      test_parsed_serial_message,
+      test_cables_client
+    );
+
+    expect(send_result).toBe(true);
+  });
+});

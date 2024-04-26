@@ -1,0 +1,15 @@
+import {ParseSerialMessage, ParseSerialMessageToBundle} from '../src/util';
+const test_string_0 = '/espruino/test|400';
+
+const test_address_0 = '/espruino/test';
+const test_value_0 = 400;
+/**
+ * tests parsing of a serial message sent from arduino/espruino. this assumes that messages being sent in are being "correctly" formatted to be parsed, obviously.'
+ */
+describe('util testing', () => {
+  test('tests arduino->espruino->node serial string parsing', () => {
+    const result = ParseSerialMessage(test_string_0);
+    expect(result[0]).toMatch(test_address_0);
+    expect(result[1]).toContain(400);
+  });
+});
