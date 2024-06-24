@@ -83,6 +83,9 @@ an interoperational visual project between arduino, espruino, node, osc, mobile,
                  1. Here, I used a capture window source set to the web browser I'm running the cables.gl patch in
                     1. this does get a bit fiddly, since you have to maximize/fullscreen the canvas within the patch, so some pre-prep in the cables.gl section is necessary beforehand
               4. RTSP server
+                 1. After installing OBS RTSP Server, we need to:
+                    1. 
+              5. 
      2. cables.gl
         1. OSC
         2. Webcam
